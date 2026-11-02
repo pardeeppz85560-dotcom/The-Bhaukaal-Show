@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11101a">
+  <meta name="description" content="The Bhaukaal Show by Pardeep Kumar — entertainment, motivation, comedy, study tips, finance and technology.">
+  <title>The Bhaukaal Show | Pardeep Kumar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <a href="#home" class="brand" aria-label="The Bhaukaal Show home">
+      <span class="logo">BH!</span>
+      <span>
+        THE BHAUKAAL SHOW
+        <small>ENTERTAIN • LEARN • GROW</small>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" type="button"
+      aria-label="Toggle navigation" aria-controls="nav"
+      aria-expanded="false">☰</button>
+
+    <nav id="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#videos">Videos</a>
+      <a href="#gallery">Photos</a>
+      <a href="#learn">Learn</a>
+      <a href="#about">About</a>
+      <a href="#mahadev">Mahadev</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+
+    <button id="themeToggle" class="theme-btn" type="button">
+      ☀️ Light
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">WELCOME TO MY WORLD</span>
+
+        <h1 class="hero-title">
+          THE BHAUKAAL<br>
+          <span>SHOW<span class="pop">!</span></span>
+        </h1>
+
+        <p class="hero-lead">Entertainment bhi, knowledge bhi!</p>
+
+        <p>
+          Yahan milegi motivation, funny videos, study tips, financial
+          awareness, technology, English learning aur career guidance.
+          Har din kuch naya seekho aur aage badho.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="#videos">Explore Videos ↗</a>
+          <a class="btn secondary" href="#about">Meet Pardeep</a>
+        </div>
+
+        <div class="stats">
+          <div><strong>Daily</strong><small>Fresh content</small></div>
+          <div><strong>Many</strong><small>Topics to explore</small></div>
+          <div><strong>One</strong><small>Growing community</small></div>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-photo">
+          <img id="heroPhoto" alt="Pardeep Kumar" hidden>
+          <div id="photoPlaceholder" class="photo-placeholder">
+            <span>PK</span>
+            <p>YOUR PHOTO HERE</p>
+          </div>
+        </div>
+
+        <label class="btn primary upload-btn" for="photoInput">
+          <img src="images/WhatsApp Image 2026-11-03 at 12.57.16 AM.jpeg" alt="">
+        </label>
+
+        <input id="photoInput" type="file" accept="image/*" hidden>
+
+        <p class="caption">THE CREATOR BEHIND THE SHOW</p>
+        <h2>Pardeep Kumar</h2>
+        <p class="muted">B.Tech CSE (AI) Student · Creator · Learner</p>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-label="Show topics">
+      <div class="ticker-inner">
+        THE BHAUKAAL SHOW ✦ MOTIVATION ✦ FUNNY ✦ STUDY ✦ FINANCE
+        ✦ SKILLS ✦ TECHNOLOGY ✦ ENGLISH LEARNING ✦
+      </div>
+    </div>
+
+    <!-- VIDEOS -->
+    <section class="section" id="videos">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">YOUR DAILY DOSE</span>
+          <h2>Latest <span>Videos</span></h2>
+        </div>
+
+        <a class="text-link"
+          href="https://www.youtube.com/@PardeepKumar-y2m2p"
+          target="_blank" rel="noopener noreferrer">
+          YouTube Channel ↗
+        </a>
+      </div>
+
+      <p class="muted section-intro">
+        Choose a category, watch a video and come back for more.
+      </p>
+
+      <div class="filters" id="videoFilters">
+        <button class="filter active" type="button" data-category="All">All</button>
+        <button class="filter" type="button" data-category="Motivation">Motivation</button>
+        <button class="filter" type="button" data-category="Funny">Funny</button>
+        <button class="filter" type="button" data-category="Study">Study</button>
+        <button class="filter" type="button" data-category="Finance">Finance</button>
+        <button class="filter" type="button" data-category="Skills">Skills</button>
+        <button class="filter" type="button" data-category="English">English</button>
+      </div>
+
+      <div class="video-grid" id="videoGrid">
+
+        <article class="video-card" data-category="Motivation">
+          <a class="video-cover cover-one"
+            href="https://www.youtube.com/results?search_query=motivational+videos+for+students"
+            target="_blank" rel="noopener noreferrer">
+            <span>01 / MOTIVATION</span><b>NEVER GIVE UP</b><i>▶</i>
+          </a>
+          <div class="video-info">
+            <span>Motivation</span>
+            <h3>Keep Moving Forward</h3>
+            <p>Build discipline, stay consistent and work toward your goals.</p>
+            <a href="https://www.youtube.com/results?search_query=motivational+videos+for+students"
+              target="_blank" rel="noopener noreferrer">Explore videos ↗</a>
+          </div>
+        </article>
+
+        <article class="video-card" data-category="Funny">
+          <a class="video-cover cover-two"
+            href="https://www.youtube.com/results?search_query=funny+indian+comedy+shorts"
+            target="_blank" rel="noopener noreferrer">
+            <span>02 / FUNNY</span><b>FULL ON FUN</b><i>▶</i>
+          </a>
+          <div class="video-info">
+            <span>Funny</span>
+            <h3>Desi Comedy Vibes</h3>
+            <p>Light-hearted comedy and everyday situations to make you smile.</p>
+            <a href="https://www.youtube.com/results?search_query=funny+indian+comedy+shorts"
+              target="_blank" rel="noopener noreferrer">Explore videos ↗</a>
+          </div>
+        </article>
+
+        <article class="video-card" data-category="Study">
+          <a class="video-cover cover-three"
+            href="https://www.youtube.com/results?search_query=study+tips+for+students"
+            target="_blank" rel="noopener noreferrer">
+            <span>03 / STUDY</span><b>STUDY SMART</b><i>▶</i>
+          </a>
+          <div class="video-info">
+            <span>Study</span>
+            <h3>Learn Smarter</h3>
+            <p>Study strategies, productivity and useful student resources.</p>
+            <a href="https://www.youtube.com/results?search_query=study+tips+for+students"
+              target="_blank" rel="noopener noreferrer">Explore videos ↗</a>
+          </div>
+        </article>
+
+        <article class="video-card" data-category="Finance">
+          <a class="video-cover cover-four"
+            href="https://www.youtube.com/results?search_query=personal+finance+basics"
+            target="_blank" rel="noopener noreferrer">
+            <span>04 / FINANCE</span><b>MONEY SMART</b><i>▶</i>
+          </a>
+          <div class="video-info">
+            <span>Finance</span>
+            <h3>Financial Awareness</h3>
+            <p>Learn about budgeting, saving and basic financial concepts.</p>
+            <a href="https://www.youtube.com/results?search_query=personal+finance+basics"
+              target="_blank" rel="noopener noreferrer">Explore videos ↗</a>
+          </div>
+        </article>
+
+        <article class="video-card" data-category="Skills">
+          <a class="video-cover cover-five"
+            href="https://www.youtube.com/results?search_query=communication+skills"
+            target="_blank" rel="noopener noreferrer">
+            <span>05 / SKILLS</span><b>LEVEL UP</b><i>▶</i>
+          </a>
+          <div class="video-info">
+            <span>Skills</span>
+            <h3>Communication Skills</h3>
+            <p>Practice speaking, confidence, teamwork and communication.</p>
+            <a href="https://www.youtube.com/results?search_query=communication+skills"
+              target="_blank" rel="noopener noreferrer">Explore videos ↗</a>
+          </div>
+        </article>
+
+        <article class="video-card" data-category="English">
+          <a class="video-cover cover-six"
+            href="https://www.youtube.com/results?search_query=English+speaking+practice"
+            target="_blank" rel="noopener noreferrer">
+            <span>06 / ENGLISH</span><b>SPEAK ENGLISH</b><i>▶</i>
+          </a>
+          <div class="video-info">
+            <span>English</span>
+            <h3>English Speaking Practice</h3>
+            <p>Useful phrases and practice ideas for everyday English.</p>
+            <a href="https://www.youtube.com/results?search_query=English+speaking+practice"
+              target="_blank" rel="noopener noreferrer">Explore videos ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ADD VIDEO -->
+      <div class="panel add-video">
+        <div>
+          <span class="eyebrow">YOUR DAILY UPLOAD</span>
+          <h3>Add a video from YouTube</h3>
+          <p class="muted">
+            Paste your video link, choose a category and add it.
+          </p>
+        </div>
+
+        <form id="videoForm" class="inline-form">
+          <input id="videoTitle" type="text" placeholder="Video title"
+            maxlength="100" required>
+
+          <input id="videoUrl" type="url"
+            placeholder="Paste YouTube video URL" required>
+
+          <select id="videoCategory" aria-label="Choose video category">
+            <option value="Motivation">Motivation</option>
+            <option value="Funny">Funny</option>
+            <option value="Study">Study</option>
+            <option value="Finance">Finance</option>
+            <option value="Skills">Skills</option>
+            <option value="English">English</option>
+          </select>
+
+          <button class="btn primary" type="submit">＋ Add Video</button>
+        </form>
+      </div>
+
+      <p class="small-note">
+        Videos added here are saved in this browser only.
+        A backend is needed to share them with every visitor.
+      </p>
+    </section>
+
+    <!-- LEARNING -->
+    <section class="section learning-section" id="learn">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">LEARN SOMETHING NEW</span>
+          <h2>Learn & <span>Level Up</span></h2>
+        </div>
+      </div>
+
+      <p class="muted section-intro">
+        Explore learning resources in English.
+      </p>
+
+      <div class="learning-grid">
+        <a class="learning-card"
+          href="https://www.youtube.com/results?search_query=motivation+for+students"
+          target="_blank" rel="noopener noreferrer">
+          <span>ENGLISH VIDEO 01</span>
+          <b>Motivation for Students</b>
+          <p>Build a positive mindset and daily discipline.</p>
+          <strong>Find videos ↗</strong>
+        </a>
+
+        <a class="learning-card"
+          href="https://www.youtube.com/results?search_query=English+communication+skills"
+          target="_blank" rel="noopener noreferrer">
+          <span>ENGLISH VIDEO 02</span>
+          <b>Communication Skills</b>
+          <p>Improve speaking, listening and confidence.</p>
+          <strong>Find videos ↗</strong>
+        </a>
+
+        <a class="learning-card"
+          href="https://www.youtube.com/results?search_query=web+development+course"
+          target="_blank" rel="noopener noreferrer">
+          <span>ENGLISH VIDEO 03</span>
+          <b>Web Development</b>
+          <p>Explore HTML, CSS, JavaScript and coding basics.</p>
+          <strong>Find videos ↗</strong>
+        </a>
+
+        <a class="learning-card"
+          href="https://www.youtube.com/results?search_query=personal+finance+basics"
+          target="_blank" rel="noopener noreferrer">
+          <span>ENGLISH VIDEO 04</span>
+          <b>Personal Finance Basics</b>
+          <p>Understand budgeting, saving and money management.</p>
+          <strong>Find videos ↗</strong>
+        </a>
+      </div>
+
+      <p class="small-note">
+        These links open YouTube search results, not verified individual videos.
+      </p>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section class="section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">MOMENTS & MEMORIES</span>
+          <h2>Photo <span>Gallery</span></h2>
+        </div>
+
+        <label for="galleryUpload" class="btn secondary"><img src="images/WhatsApp Image 2026-11-03 at 12.57.16 AM.jpeg" alt=""></label>
+        <input id="galleryUpload" type="file" accept="image/*" multiple hidden>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <figure class="gallery-tile">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80"
+            alt="Mountain landscape" loading="lazy">
+          <figcaption>Dream big</figcaption>
+        </figure>
+
+        <figure class="gallery-tile">
+          <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=700&q=80"
+            alt="Green plants" loading="lazy">
+          <figcaption>Stay positive</figcaption>
+        </figure>
+
+        <figure class="gallery-tile">
+          <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=700&q=80"
+            alt="Books and learning" loading="lazy">
+          <figcaption>Keep learning</figcaption>
+        </figure>
+
+        <figure class="gallery-tile">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80"
+            alt="Working on a laptop" loading="lazy">
+          <figcaption>Build skills</figcaption>
+        </figure>
+
+        <figure class="gallery-tile">
+          <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=700&q=80"
+            alt="Sunrise in nature" loading="lazy">
+          <figcaption>New beginnings</figcaption>
+        </figure>
+
+        <figure class="gallery-tile">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=700&q=80"
+            alt="Students learning together" loading="lazy">
+          <figcaption>Learn together</figcaption>
+        </figure>
+
+        <figure class="gallery-tile">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80"
+            alt="Portrait photography" loading="lazy">
+          <figcaption>Be yourself</figcaption>
+        </figure>
+
+        <figure class="gallery-tile">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=700&q=80"
+            alt="Outdoor landscape" loading="lazy">
+          <figcaption>Explore more</figcaption>
+        </figure>
+
+        <figure class="gallery-tile">
+          <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80"
+            alt="Notebook and desk" loading="lazy">
+          <figcaption>Create daily</figcaption>
+        </figure>
+      </div>
+
+      <p class="small-note">
+        Uploaded photo previews are stored in this browser session only.
+      </p>
+    </section>
+
+    <!-- ADVERTISEMENT -->
+    <section class="section ad-section" id="advertise">
+      <div class="ad-box">
+        <span class="eyebrow">PARTNERSHIP SPACE</span>
+        <h2>Your brand could be <span>here.</span></h2>
+        <p class="muted">
+          Advertisement and collaboration enquiries are welcome.
+        </p>
+        <a href="#feedback" class="btn secondary">
+          Contact for collaboration ↗
+        </a>
+        <small>Advertisement placeholder — no ads are running yet.</small>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="about-panel panel">
+        <div class="about-mark">PK<span>.</span></div>
+
+        <div>
+          <span class="eyebrow">MEET THE CREATOR</span>
+          <h2>Hey, I'm <span>Pardeep Kumar.</span></h2>
+
+          <p>
+            I'm a third-year B.Tech Computer Science and Engineering (AI)
+            student at Babu Banarasi Das University, Lucknow. I enjoy
+            technology, web development, learning new skills and creating
+            digital projects.
+          </p>
+
+          <p>
+            The Bhaukaal Show is a space for entertaining videos and useful
+            content about motivation, comedy, study tips, finance, technology,
+            English communication and career skills.
+          </p>
+
+          <p>
+            My goal is to make learning enjoyable and share something valuable
+            with viewers. Join the journey and keep learning with me!
+          </p>
+
+          <a class="btn primary"
+            href="https://www.youtube.com/@PardeepKumar-y2m2p"
+            target="_blank" rel="noopener noreferrer">
+            Visit My YouTube Channel ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAHADEV -->
+    <section class="section" id="mahadev">
+      <div class="mahadev-card">
+        <div class="mahadev-art" role="img"
+          aria-label="Decorative mountain artwork with Om symbol">
+          <div class="om-symbol">ॐ</div>
+          <div class="mahadev-title">हर हर महादेव</div>
+        </div>
+
+        <div class="mahadev-copy">
+          <span class="eyebrow">FAITH · PEACE · POSITIVITY</span>
+          <h2>ॐ नमः <span>शिवाय</span></h2>
+          <p class="subtitle">Strength in silence. Peace in the heart.</p>
+
+          <p>
+            भगवान शिव, जिन्हें महादेव और भोलेनाथ के नाम से भी जाना जाता है,
+            हिंदू धर्म के प्रमुख देवताओं में से एक हैं। उनकी परंपरा हमें
+            धैर्य, आत्मचिंतन, सादगी और कठिन समय में साहस बनाए रखने की
+            प्रेरणा देती है।
+          </p>
+
+          <p>
+            This section is dedicated to faith, inner peace, positivity
+            and good thoughts.
+          </p>
+
+          <div class="mantra">हर हर महादेव 🕉️</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK / GOOGLE APPS SCRIPT EMAIL -->
+    <section class="section" id="feedback">
+      <div class="contact-layout">
+        <div>
+          <span class="eyebrow">LET'S CONNECT</span>
+          <h2>Send your <span>feedback.</span></h2>
+
+          <p class="muted">
+            What should we make next? Send your ideas, suggestions,
+            questions or collaboration requests.
+          </p>
+
+          <p class="contact-email">
+            ✉️
+            <a href="mailto:pardeeppz85560@gmail.com">
+              pardeeppz85560@gmail.com
+            </a>
+          </p>
+
+          <a class="social-link"
+            href="https://www.instagram.com/aicre_aterzone/"
+            target="_blank" rel="noopener noreferrer">
+            Instagram · @aicre_aterzone ↗
+          </a>
+
+          <a class="social-link"
+            href="https://www.instagram.com/pradeep__mauraya/"
+            target="_blank" rel="noopener noreferrer">
+            Instagram · @pradeep__mauraya ↗
+          </a>
+
+          <a class="social-link"
+            href="https://www.youtube.com/@PardeepKumar-y2m2p"
+            target="_blank" rel="noopener noreferrer">
+            YouTube · The Bhaukaal Show ↗
+          </a>
+        </div>
+
+        <form id="feedbackForm" class="feedback-form panel"
+          action="" method="POST">
+
+          <label for="visitorName">Your name</label>
+          <input id="visitorName" type="text" name="name"
+            placeholder="Enter your name" maxlength="100"
+            autocomplete="name" required>
+
+          <label for="visitorEmail">Your email</label>
+          <input id="visitorEmail" type="email" name="email"
+            placeholder="you@example.com" maxlength="150"
+            autocomplete="email" required>
+
+          <label for="messageType">Message type</label>
+          <select id="messageType" name="category" required>
+            <option value="General Feedback">General Feedback</option>
+            <option value="Video Suggestion">Video Suggestion</option>
+            <option value="Collaboration">Collaboration</option>
+            <option value="Advertisement Enquiry">Advertisement Enquiry</option>
+          </select>
+
+          <label for="visitorMessage">Your message</label>
+          <textarea id="visitorMessage" name="message" rows="5"
+            placeholder="Write your message here..."
+            maxlength="5000" required></textarea>
+
+          <button id="sendBtn" class="btn primary" type="submit">
+            Send Feedback ↗
+          </button>
+
+          <p id="formStatus" class="form-status"
+            role="status" aria-live="polite"></p>
+
+          <small class="small-note">
+            Feedback is processed using Google Apps Script.
+          </small>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#home" class="brand footer-brand">
+      <span class="logo">BH!</span>
+      <span>
+        THE BHAUKAAL SHOW
+        <small>CREATED BY PARDEEP KUMAR</small>
+      </span>
+    </a>
+
+    <p>
+      © <span id="year"></span> The Bhaukaal Show.
+      Keep learning. Keep creating.
+    </p>
+  </footer>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
